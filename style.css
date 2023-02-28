@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-image: url("/public/images/fd_elige3n.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 110vh;
+    padding-bottom: 15vh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.picture_container {
+    display: grid;
+    align-items: end;
+    border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
+    aspect-ratio: 1/1.4;
+    width: 40vw;
+    transition: transform 250ms ease-in-out;
+}
+
+.p_picture {
+    position: relative;
+    max-width: 20rem;
+    margin-inline: auto;
+    transition: transform 250ms ease-in-out
+}
+
+.photo {
+    position: relative;
+    z-index: 2;
+    transform: scale(1.5);
+    transition: transform 250ms ease-in-out
+}
+
+.circle {
+    position: absolute;
+    inset: auto 0 0;
+    bottom: 0;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    margin-inline: auto;
+    transition: transform 250ms ease-in-out
+}
+
+.picture_container:hover {
+    transform: scale(1.1);
+}
+
+.picture_container:hover .photo{
+    transform: 
+    scale(1.5)
+    translateY(-1rem);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translatex(-100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translatex(0);
+}
+
+.i_container {
+    padding-top: 5vh;
+    display: flex;
+}
+
+.i_container i{
+    padding-right: 1vw;
+    padding-left: 1vw;
+    font-size: 5rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item i{
+    padding-top: 2vh;
+    font-size: 3rem;
+}
+
+.item p{
+    font-size: 1rem;
+}
+
+.comments {
+    display: grid;
+    gap: 1.5rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.comments :nth-child(1){
+    background-color: #940765;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.comments :nth-child(2){
+    background-color: #943607;
+    border-radius: 10px;
+    padding: 1rem;
+    transition-delay: 200ms;
+}
+
+.comments :nth-child(3){
+    background-color: #947C07;
+    border-radius: 10px;
+    padding: 1rem;
+    transition-delay: 400ms;
+}
+
+.comments :nth-child(4){
+    background-color:#94071E;
+    border-radius: 10px;
+    padding: 1rem;
+    transition-delay: 600ms;
+}
+
+.i_container :nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.i_container :nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.i_container :nth-child(4) {
+    transition-delay: 900ms;
+}
+
+.item :nth-child(2){
+    transition-delay: 300ms;
+}
+
+.item :nth-child(3){
+    transition-delay: 600ms;
+}
+
+.item :nth-child(4){
+    transition-delay: 900ms;
+}
+
+.item a {
+    text-decoration: none;
+    color: white;
+}
+
+.totop {
+    color: white;
+    position: fixed;
+    font-size: 3rem;
+    bottom: 4vh;
+    right: 4vw;
+    opacity: 0;
+    transition: all 1s;
+    pointer-events: none;
+}
+
+.totop.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media (min-width: 768px) {
+
+    .picture_container {
+        width: 20vw;
+    }
+
+    .comments {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .comments :nth-child(1){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .comments :nth-child(4){
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
