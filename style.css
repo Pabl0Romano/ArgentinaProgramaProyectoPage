@@ -11,7 +11,7 @@ html {
 
 body {
     scroll-behavior: smooth;
-    background-image: url("/public/images/fd_elige3n.gif");
+    background-image: url("public/images/fd_elige3n.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw 100vh;
