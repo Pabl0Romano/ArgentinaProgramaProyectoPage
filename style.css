@@ -27,6 +27,12 @@ section {
     padding-bottom: 15vh;
 }
 
+.timeline {
+    padding-top: 3vh;
+    min-height: 110vh;
+    position: relative;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -116,63 +122,145 @@ img {
     font-size: 1rem;
 }
 
-.comments {
+.exp {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+}
+
+.arrow-container {
+    position: relative;
+}
+
+.dot1 {
+    border-radius: 100%;
+    position: absolute;
+    width: 1rem;
+    top: 0%;
+    bottom: 0%;
+    left: -60%;
+    right: 0%;
+    margin: auto;
+}
+
+.dot2 {
+    border-radius: 100%;
+    position: absolute;
+    width: 1rem;
+    top: 0%;
+    bottom: 0%;
+    left: -30%;
+    right: 0%;
+    margin: auto;
+}
+
+.dot3 {
+    border-radius: 100%;
+    position: absolute;
+    width: 1rem;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+}
+
+.dot4 {
+    border-radius: 100%;
+    position: absolute;
+    width: 1rem;
+    top: 0%;
+    bottom: 0%;
+    left: 30%;
+    right: 0%;
+    margin: auto;
+}
+
+.dot5 {
+    border-radius: 100%;
+    position: absolute;
+    width: 1rem;
+    top: 0%;
+    bottom: 0%;
+    left: 60%;
+    right: 0%;
+    margin: auto;
+}
+
+.dot-text1 {
+    opacity: 0;
     display: grid;
     gap: 1.5rem;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-.comments :nth-child(1){
-    background-color: #940765;
+    margin-left: 15vw;
+    margin-right: 15vw;
     border-radius: 10px;
-    padding: 1rem;
+    background-color: #895E92;
+    padding: 1Rem;
+    position: absolute;
+    top: 12rem;
 }
 
-.comments :nth-child(2){
-    background-color: #943607;
+.dot-text2 {
+    opacity: 0;
+    display: grid;
+    gap: 1.5rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
     border-radius: 10px;
-    padding: 1rem;
-    transition-delay: 200ms;
+    background-color: #895E92;
+    padding: 1Rem;
+    position: absolute;
+    top: 12rem;
 }
 
-.comments :nth-child(3){
-    background-color: #947C07;
+.dot-text3 {
+    opacity: 0;
+    display: grid;
+    gap: 1.5rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
     border-radius: 10px;
-    padding: 1rem;
-    transition-delay: 400ms;
+    background-color: #895E92;
+    padding: 1Rem;
+    position: absolute;
+    top: 12rem;
 }
 
-.comments :nth-child(4){
-    background-color:#94071E;
+.dot-text4 {
+    opacity: 0;
+    display: grid;
+    gap: 1.5rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
     border-radius: 10px;
-    padding: 1rem;
-    transition-delay: 600ms;
+    background-color: #895E92;
+    padding: 1Rem;
+    position: absolute;
+    top: 12rem;
 }
 
-.i_container :nth-child(2) {
-    transition-delay: 300ms;
+.dot-text5 {
+    opacity: 0;
+    display: grid;
+    gap: 1.5rem;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border-radius: 10px;
+    background-color: #895E92;
+    padding: 1Rem;
+    position: absolute;
+    top: 12rem;
 }
 
-.i_container :nth-child(3) {
-    transition-delay: 600ms;
-}
-
-.i_container :nth-child(4) {
-    transition-delay: 900ms;
-}
-
-.item :nth-child(2){
-    transition-delay: 300ms;
-}
-
-.item :nth-child(3){
-    transition-delay: 600ms;
-}
-
-.item :nth-child(4){
-    transition-delay: 900ms;
-}
 
 .item a {
     text-decoration: none;
@@ -199,19 +287,5 @@ img {
 
     .picture_container {
         width: 20vw;
-    }
-
-    .comments {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .comments :nth-child(1){
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .comments :nth-child(4){
-        grid-column-start: 2;
-        grid-column-end: 4;
     }
 }
